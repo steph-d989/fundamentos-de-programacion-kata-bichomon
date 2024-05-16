@@ -15,4 +15,6 @@ pokemon.style.background='pink';
 let nodosImg = document.querySelectorAll('img');
 console.log(nodosImg);
 /*Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"*/
-const img = [...nodosImg];
+for(let i=0; i<nodosImg.length; i++){
+    nodosImg[i].setAttribute('src', "https://media.giphy.com/media/2v170e71aanfi/giphy.gif");
+}
